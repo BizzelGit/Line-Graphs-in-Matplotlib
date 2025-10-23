@@ -1,0 +1,15 @@
+import codecademylib
+from matplotlib import pyplot as plt
+
+x =  [3000, 3005, 3010, 2900, 2950, 3050, 3000, 3100, 2980, 2980, 2920, 3010]
+y1 =  [30000, 30050, 30100, 29000, 29500, 30500, 30000, 31000, 29800, 29800, 29200, 30100]
+y2 =[300000, 300500, 301000, 290000, 295000, 305000, 300000, 310000, 298000, 298000, 292000, 301000]
+
+plt.plot(x, y1, color='pink', marker='o')
+plt.plot(x, y2, color='gray', marker='o')
+plt.xlabel('Amazing X-axis')
+plt.ylabel('Incredible Y-axis')
+plt.title('Two Lines on One Graph')
+legend_labels = ['Amazing X-axis', 'Incredible Y-axis', 'Two Lines on One Graph']
+plt.legend(legend_labels, loc=7)
+plt.show()
